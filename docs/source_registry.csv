@@ -1,0 +1,6 @@
+id,label,provider,reference_url,dataset_group,update_expectation,rights_status,collection_status
+kto_official_tourism_stats,한국관광통계,한국관광공사,https://datalab.visitkorea.or.kr/datalab/portal/getMetaInfoList.do,KTO-01|KTO-02|KTO-03|KTO-04|KTO-05,매월 말 전월분 (공식 안내상 예상; 실제 공표 확인 후 갱신),needs_per_file_check,needs_source_mapping
+kto_regional_data,지역별 외국인 방문·소비,한국관광공사 / 이동통신·카드 데이터 제공사,https://datalab.visitkorea.or.kr/datalab/portal/loc/getAreaFocTourBeta.do,GG-01|GG-02|GG-03|GG-04|SP-01|SP-02|SP-03,매월 17일 전월분 (공식 안내상 예상),needs_provider_and_kto_check,needs_source_mapping
+kto_aviation,방한 항공 운항현황,한국관광공사,https://datalab.visitkorea.or.kr/html/serviceguide/serviceguide.jsp?mode=2,AIR-01,원자료 확인 전 미확정,needs_per_file_check,needs_source_mapping
+ggto_ota_internal,관광지·OTA 연결 DB,팀 제공 파일 또는 권한이 확인된 기초자료,,DB-01,담당자 갱신 시,internal_approval_required,awaiting_owner_file
+kto_market_reports,해외시장 보고서,한국관광공사 및 개별 공식 발행처,https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do,RES-01,신규 공표 확인 시,per_publisher_review,needs_metadata_rights_review

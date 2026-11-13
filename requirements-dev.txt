@@ -1,0 +1,2 @@
+# Only needed for browser tests, not for serving the static site.
+playwright==1.62.0
