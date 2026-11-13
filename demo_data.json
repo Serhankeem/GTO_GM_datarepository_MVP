@@ -1,0 +1,399 @@
+{
+  "meta": {
+    "demo": true,
+    "asof": "2026-11-13",
+    "source": "합성 데이터 (실제 공표 통계 아님)",
+    "sample_period": "2026-09",
+    "region_definition": "정규화된 모의지수·기준 100 (실제 방문자 수 아님)"
+  },
+  "monthly": [
+    {
+      "period": "2024-01",
+      "year": 2024,
+      "month": 1,
+      "inbound": 901542,
+      "status": "demo"
+    },
+    {
+      "period": "2024-02",
+      "year": 2024,
+      "month": 2,
+      "inbound": 1021977,
+      "status": "demo"
+    },
+    {
+      "period": "2024-03",
+      "year": 2024,
+      "month": 3,
+      "inbound": 1370355,
+      "status": "demo"
+    },
+    {
+      "period": "2024-04",
+      "year": 2024,
+      "month": 4,
+      "inbound": 1339386,
+      "status": "demo"
+    },
+    {
+      "period": "2024-05",
+      "year": 2024,
+      "month": 5,
+      "inbound": 1449777,
+      "status": "demo"
+    },
+    {
+      "period": "2024-06",
+      "year": 2024,
+      "month": 6,
+      "inbound": 1375253,
+      "status": "demo"
+    },
+    {
+      "period": "2024-07",
+      "year": 2024,
+      "month": 7,
+      "inbound": 1461712,
+      "status": "demo"
+    },
+    {
+      "period": "2024-08",
+      "year": 2024,
+      "month": 8,
+      "inbound": 1304139,
+      "status": "demo"
+    },
+    {
+      "period": "2024-09",
+      "year": 2024,
+      "month": 9,
+      "inbound": 1474143,
+      "status": "demo"
+    },
+    {
+      "period": "2024-10",
+      "year": 2024,
+      "month": 10,
+      "inbound": 1501423,
+      "status": "demo"
+    },
+    {
+      "period": "2024-11",
+      "year": 2024,
+      "month": 11,
+      "inbound": 1357304,
+      "status": "demo"
+    },
+    {
+      "period": "2024-12",
+      "year": 2024,
+      "month": 12,
+      "inbound": 1069159,
+      "status": "demo"
+    },
+    {
+      "period": "2025-01",
+      "year": 2025,
+      "month": 1,
+      "inbound": 988788,
+      "status": "demo"
+    },
+    {
+      "period": "2025-02",
+      "year": 2025,
+      "month": 2,
+      "inbound": 1120878,
+      "status": "demo"
+    },
+    {
+      "period": "2025-03",
+      "year": 2025,
+      "month": 3,
+      "inbound": 1502970,
+      "status": "demo"
+    },
+    {
+      "period": "2025-04",
+      "year": 2025,
+      "month": 4,
+      "inbound": 1469004,
+      "status": "demo"
+    },
+    {
+      "period": "2025-05",
+      "year": 2025,
+      "month": 5,
+      "inbound": 1590078,
+      "status": "demo"
+    },
+    {
+      "period": "2025-06",
+      "year": 2025,
+      "month": 6,
+      "inbound": 1508342,
+      "status": "demo"
+    },
+    {
+      "period": "2025-07",
+      "year": 2025,
+      "month": 7,
+      "inbound": 1603168,
+      "status": "demo"
+    },
+    {
+      "period": "2025-08",
+      "year": 2025,
+      "month": 8,
+      "inbound": 1430346,
+      "status": "demo"
+    },
+    {
+      "period": "2025-09",
+      "year": 2025,
+      "month": 9,
+      "inbound": 1616802,
+      "status": "demo"
+    },
+    {
+      "period": "2025-10",
+      "year": 2025,
+      "month": 10,
+      "inbound": 1646722,
+      "status": "demo"
+    },
+    {
+      "period": "2025-11",
+      "year": 2025,
+      "month": 11,
+      "inbound": 1488656,
+      "status": "demo"
+    },
+    {
+      "period": "2025-12",
+      "year": 2025,
+      "month": 12,
+      "inbound": 1172626,
+      "status": "demo"
+    },
+    {
+      "period": "2026-01",
+      "year": 2026,
+      "month": 1,
+      "inbound": 1054222,
+      "status": "demo"
+    },
+    {
+      "period": "2026-02",
+      "year": 2026,
+      "month": 2,
+      "inbound": 1195054,
+      "status": "demo"
+    },
+    {
+      "period": "2026-03",
+      "year": 2026,
+      "month": 3,
+      "inbound": 1602431,
+      "status": "demo"
+    },
+    {
+      "period": "2026-04",
+      "year": 2026,
+      "month": 4,
+      "inbound": 1566217,
+      "status": "demo"
+    },
+    {
+      "period": "2026-05",
+      "year": 2026,
+      "month": 5,
+      "inbound": 1695304,
+      "status": "demo"
+    },
+    {
+      "period": "2026-06",
+      "year": 2026,
+      "month": 6,
+      "inbound": 1608159,
+      "status": "demo"
+    },
+    {
+      "period": "2026-07",
+      "year": 2026,
+      "month": 7,
+      "inbound": 1709260,
+      "status": "demo"
+    },
+    {
+      "period": "2026-08",
+      "year": 2026,
+      "month": 8,
+      "inbound": 1525001,
+      "status": "demo"
+    },
+    {
+      "period": "2026-09",
+      "year": 2026,
+      "month": 9,
+      "inbound": 1723796,
+      "status": "demo"
+    }
+  ],
+  "markets": [
+    {
+      "name": "중국",
+      "value": 28.1,
+      "change": 5.6
+    },
+    {
+      "name": "일본",
+      "value": 24.7,
+      "change": 8.4
+    },
+    {
+      "name": "대만",
+      "value": 12.2,
+      "change": 9.7
+    },
+    {
+      "name": "미국",
+      "value": 8.4,
+      "change": 3.2
+    },
+    {
+      "name": "베트남",
+      "value": 6.7,
+      "change": 7.8
+    },
+    {
+      "name": "기타",
+      "value": 19.9,
+      "change": 2.3
+    }
+  ],
+  "regions": [
+    {
+      "name": "수원시",
+      "visitor_index": 132,
+      "spend_index": 121,
+      "signal": "도심·역사관광"
+    },
+    {
+      "name": "고양시",
+      "visitor_index": 126,
+      "spend_index": 134,
+      "signal": "전시·MICE"
+    },
+    {
+      "name": "파주시",
+      "visitor_index": 118,
+      "spend_index": 96,
+      "signal": "평화·문화관광"
+    },
+    {
+      "name": "가평군",
+      "visitor_index": 112,
+      "spend_index": 104,
+      "signal": "자연·체험관광"
+    },
+    {
+      "name": "용인시",
+      "visitor_index": 124,
+      "spend_index": 116,
+      "signal": "테마파크"
+    },
+    {
+      "name": "포천시",
+      "visitor_index": 99,
+      "spend_index": 94,
+      "signal": "자연·체험관광"
+    },
+    {
+      "name": "여주시",
+      "visitor_index": 87,
+      "spend_index": 90,
+      "signal": "역사·문화관광"
+    }
+  ],
+  "resources": [
+    {
+      "name": "수원 화성",
+      "region": "수원시",
+      "kind": "역사·문화",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    },
+    {
+      "name": "킨텍스",
+      "region": "고양시",
+      "kind": "MICE",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    },
+    {
+      "name": "임진각 평화누리",
+      "region": "파주시",
+      "kind": "평화관광",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    },
+    {
+      "name": "아침고요수목원",
+      "region": "가평군",
+      "kind": "자연·관광",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    },
+    {
+      "name": "한국민속촌",
+      "region": "용인시",
+      "kind": "문화·체험",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    },
+    {
+      "name": "포천아트밸리",
+      "region": "포천시",
+      "kind": "자연·문화",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    },
+    {
+      "name": "세종대왕릉",
+      "region": "여주시",
+      "kind": "역사·문화",
+      "status": "검증 전",
+      "link": "https://datalab.visitkorea.or.kr/"
+    }
+  ],
+  "reports": [
+    {
+      "title": "한국관광통계 · 방한 외래관광객",
+      "org": "한국관광공사 · 한국관광 데이터랩",
+      "period": "월간",
+      "type": "공식 통계",
+      "link": "https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do"
+    },
+    {
+      "title": "지역별 관광현황·외래객 지역별 방한현황",
+      "org": "한국관광공사 · 한국관광 데이터랩",
+      "period": "월간",
+      "type": "지역 분석",
+      "link": "https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do"
+    },
+    {
+      "title": "2026 국가별 방한관광시장 분석",
+      "org": "한국관광공사",
+      "period": "연간",
+      "type": "시장 리서치",
+      "link": "https://datalab.visitkorea.or.kr/site/portal/ex/bbs/View.do?bcIdx=311494&cateCont=tlt02&cbIdx=1129&pageIndex=1"
+    },
+    {
+      "title": "한국관광 데이터랩 · 데이터 설명 및 업데이트 주기",
+      "org": "한국관광공사",
+      "period": "수시",
+      "type": "메타데이터",
+      "link": "https://datalab.visitkorea.or.kr/datalab/portal/getMetaInfoList.do"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "kto_official_tourism_stats",
+      "label": "한국관광통계",
+      "provider": "한국관광공사",
+      "reference_url": "https://datalab.visitkorea.or.kr/datalab/portal/getMetaInfoList.do",
+      "preferred_method": "official_release_xlsx_or_approved_manual_upload",
+      "collection_status": "needs_source_mapping",
+      "rights_status": "needs_per_file_check",
+      "dataset_group": [
+        "KTO-01",
+        "KTO-02",
+        "KTO-03",
+        "KTO-04",
+        "KTO-05"
+      ],
+      "update_expectation": "매월 말 전월분 (공식 안내상 예상; 실제 공표 확인 후 갱신)"
+    },
+    {
+      "id": "kto_regional_data",
+      "label": "지역별 외국인 방문·소비",
+      "provider": "한국관광공사 / 이동통신·카드 데이터 제공사",
+      "reference_url": "https://datalab.visitkorea.or.kr/datalab/portal/loc/getAreaFocTourBeta.do",
+      "preferred_method": "official_export_manual_first",
+      "collection_status": "needs_source_mapping",
+      "rights_status": "needs_provider_and_kto_check",
+      "dataset_group": [
+        "GG-01",
+        "GG-02",
+        "GG-03",
+        "GG-04",
+        "SP-01",
+        "SP-02",
+        "SP-03"
+      ],
+      "update_expectation": "매월 17일 전월분 (공식 안내상 예상)"
+    },
+    {
+      "id": "kto_aviation",
+      "label": "방한 항공 운항현황",
+      "provider": "한국관광공사",
+      "reference_url": "https://datalab.visitkorea.or.kr/html/serviceguide/serviceguide.jsp?mode=2",
+      "preferred_method": "official_export_manual_first",
+      "collection_status": "needs_source_mapping",
+      "rights_status": "needs_per_file_check",
+      "dataset_group": [
+        "AIR-01"
+      ],
+      "update_expectation": "원자료 확인 전 미확정"
+    },
+    {
+      "id": "ggto_ota_internal",
+      "label": "관광지·OTA 연결 DB",
+      "provider": "팀 제공 파일 또는 권한이 확인된 기초자료",
+      "reference_url": null,
+      "preferred_method": "explicit_owner_approved_upload",
+      "collection_status": "awaiting_owner_file",
+      "rights_status": "internal_approval_required",
+      "dataset_group": [
+        "DB-01"
+      ],
+      "update_expectation": "담당자 갱신 시"
+    },
+    {
+      "id": "kto_market_reports",
+      "label": "해외시장 보고서",
+      "provider": "한국관광공사 및 개별 공식 발행처",
+      "reference_url": "https://datalab.visitkorea.or.kr/datalab/portal/main/getMainForm.do",
+      "preferred_method": "verified_bibliographic_metadata_only",
+      "collection_status": "needs_metadata_rights_review",
+      "rights_status": "per_publisher_review",
+      "dataset_group": [
+        "RES-01"
+      ],
+      "update_expectation": "신규 공표 확인 시"
+    }
+  ]
+}

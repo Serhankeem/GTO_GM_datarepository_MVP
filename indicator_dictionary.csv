@@ -1,0 +1,9 @@
+indicator_id,indicator_name,geography,source,unit,frequency,interpretation,phase
+inbound_visitors,방한 외래관광객,전국,한국관광통계,명,월간/연간,국가승인통계로 KTO 정의 준수,1
+inbound_yoy,방한객 전년 동월 대비,전국,한국관광통계,%,월간,비교 가능한 월끼리 계산,1
+inbound_ytd,방한객 연간누적,전국,한국관광통계,명,월간,진행중 연도는 누적 기준월 명시,1
+region_foreign_visits,외국인 지역 방문 추정,경기도 시군,관광 데이터랩 이동통신 기반,자료별 단위,월간,추세지표; 전국 방한객과 직접 동일시 금지,1
+region_foreign_spending,외국인 관광소비,경기도 시군,관광 데이터랩 신용카드 기반,원천 단위,월간,카드사 포착범위와 수정 공지 필수 확인,1
+nationality_share,국적별 방한 점유율,전국,한국관광통계,%,월간,분모와 국적 분류 정의 고정,2
+regional_asset_count,관광자원 분류 건수,경기도 시군,경기관광공사 자체 DB,건,수시,중복 제거 및 등록 기준 표준화,2
+research_catalog,공식 보고서 색인,전국/국가,한국관광 데이터랩 등,건,수시,원문 링크와 메타데이터 위주,2

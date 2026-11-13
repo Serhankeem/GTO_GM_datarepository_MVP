@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "mode": "design_only",
+  "indicators": [
+    {
+      "code": "KTO-01",
+      "id": "inbound_arrivals_annual",
+      "label_ko": "연간 방한객 수",
+      "dimensions": [
+        "national"
+      ],
+      "frequency": "year",
+      "unit": "person",
+      "source_id": "kto_official_tourism_stats",
+      "value_kind": "official_or_derived",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "완결된 연도 기준. YTD와 분리. 공식 연간 공표치 우선."
+    },
+    {
+      "code": "KTO-02",
+      "id": "inbound_arrivals_monthly",
+      "label_ko": "월간 방한객 수",
+      "dimensions": [
+        "national"
+      ],
+      "frequency": "month",
+      "unit": "person",
+      "source_id": "kto_official_tourism_stats",
+      "value_kind": "official",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "한국관광통계의 방한 외래관광객 정의 그대로 적용."
+    },
+    {
+      "code": "KTO-03",
+      "id": "inbound_arrivals_yoy",
+      "label_ko": "전년 동월 대비 증감률",
+      "dimensions": [
+        "national"
+      ],
+      "frequency": "month",
+      "unit": "percent",
+      "source_id": "kto_official_tourism_stats",
+      "value_kind": "derived",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "(이번 달 / 전년 같은 달 - 1) × 100. 분모 0/누락이면 null."
+    },
+    {
+      "code": "KTO-04",
+      "id": "inbound_arrivals_by_country",
+      "label_ko": "국가별 방한객 수",
+      "dimensions": [
+        "country"
+      ],
+      "frequency": "month",
+      "unit": "person",
+      "source_id": "kto_official_tourism_stats",
+      "value_kind": "official",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "공식 국적 분류. 전체 합산 범위/교포 분류는 원자료 확인."
+    },
+    {
+      "code": "KTO-05",
+      "id": "inbound_arrivals_country_yoy",
+      "label_ko": "국가별 방한객 성장률",
+      "dimensions": [
+        "country"
+      ],
+      "frequency": "month",
+      "unit": "percent",
+      "source_id": "kto_official_tourism_stats",
+      "value_kind": "derived",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "동일 국적 분류의 전년 동월 기준. 분류 변경 시 자동 비교 금지."
+    },
+    {
+      "code": "GG-01",
+      "id": "gg_foreign_visits",
+      "label_ko": "경기도 외국인 방문 추이",
+      "dimensions": [
+        "province"
+      ],
+      "frequency": "month",
+      "unit": "estimated_visits",
+      "source_id": "kto_regional_data",
+      "value_kind": "official_estimate",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "이동통신 기반 방문량 추정치. 고유 방문자 수로 표현 금지."
+    },
+    {
+      "code": "GG-02",
+      "id": "gg_foreign_visits_by_municipality",
+      "label_ko": "시군별 외국인 방문 추이",
+      "dimensions": [
+        "municipality"
+      ],
+      "frequency": "month",
+      "unit": "estimated_visits",
+      "source_id": "kto_regional_data",
+      "value_kind": "official_estimate",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "시군 원자료 직접 확보. 하위 구 합산으로 시 집계치 생성 금지."
+    },
+    {
+      "code": "GG-03",
+      "id": "gg_foreign_visits_municipality_yoy",
+      "label_ko": "시군별 방문 증감률",
+      "dimensions": [
+        "municipality"
+      ],
+      "frequency": "month",
+      "unit": "percent",
+      "source_id": "kto_regional_data",
+      "value_kind": "derived",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "동일 산식·공간 정의·행정구역 기준일 때만 비교."
+    },
+    {
+      "code": "GG-04",
+      "id": "gg_foreign_visits_by_country",
+      "label_ko": "국적별 경기도 방문 현황",
+      "dimensions": [
+        "province",
+        "country"
+      ],
+      "frequency": "month",
+      "unit": "estimated_visits",
+      "source_id": "kto_regional_data",
+      "value_kind": "official_estimate",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "외국인 방문 통신 추정치의 국가 분류. 한국관광통계 국적과 동일시 금지."
+    },
+    {
+      "code": "SP-01",
+      "id": "gg_foreign_card_spend",
+      "label_ko": "경기도 외국인 관광소비 추이",
+      "dimensions": [
+        "province"
+      ],
+      "frequency": "month",
+      "unit": "source_unit_pending",
+      "source_id": "kto_regional_data",
+      "value_kind": "official_sample",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "신용카드 기반, 가맹점/업종/단위·집계 범위를 파일에서 확정."
+    },
+    {
+      "code": "SP-02",
+      "id": "gg_foreign_card_spend_by_country",
+      "label_ko": "국적별 관광소비",
+      "dimensions": [
+        "province",
+        "country"
+      ],
+      "frequency": "month",
+      "unit": "source_unit_pending",
+      "source_id": "kto_regional_data",
+      "value_kind": "official_sample",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "경기도 범위. 국적별 집계 누락/온라인예약서비스 제외 유의."
+    },
+    {
+      "code": "SP-03",
+      "id": "gg_foreign_card_spend_by_industry",
+      "label_ko": "업종별 외국인 관광소비",
+      "dimensions": [
+        "province",
+        "industry"
+      ],
+      "frequency": "month",
+      "unit": "source_unit_pending",
+      "source_id": "kto_regional_data",
+      "value_kind": "official_sample",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "카드사 업종 분류 버전·변경점 확인."
+    },
+    {
+      "code": "AIR-01",
+      "id": "inbound_air_operations",
+      "label_ko": "방한 항공 운항 현황",
+      "dimensions": [
+        "country",
+        "departure_city",
+        "arrival_airport"
+      ],
+      "frequency": "month",
+      "unit": "flights_pending_verification",
+      "source_id": "kto_aviation",
+      "value_kind": "official_pending",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "운항편수·여객수 개념을 구분. 시점/빈도/수집 경로 확인 전 비연결."
+    },
+    {
+      "code": "DB-01",
+      "id": "tourism_resource_ota_links",
+      "label_ko": "관광지·OTA 연결 DB",
+      "dimensions": [
+        "municipality",
+        "attraction",
+        "ota"
+      ],
+      "frequency": "snapshot",
+      "unit": "link_records",
+      "source_id": "ggto_ota_internal",
+      "value_kind": "internal_manual",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "관광상품 노출/관련 링크 DB. 실제 판매 실적·예약 건수 아님."
+    },
+    {
+      "code": "RES-01",
+      "id": "market_reports",
+      "label_ko": "해외시장 보고서 라이브러리",
+      "dimensions": [
+        "country",
+        "publisher",
+        "category"
+      ],
+      "frequency": "date_or_year",
+      "unit": "reports",
+      "source_id": "kto_market_reports",
+      "value_kind": "metadata_only",
+      "source_confirmed": false,
+      "connected": false,
+      "publication_approved": false,
+      "notes": "제목·기관·날짜 정밀도·원문 URL 등 메타데이터만. PDF 복제 금지."
+    }
+  ]
+}
