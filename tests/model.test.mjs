@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {yoy,monthlyRows,validateData,csv} from '../assets/model.mjs';
+const load=p=>JSON.parse(readFileSync(new URL('../'+p,import.meta.url),'utf8'));
+const d=load('data/demo_data.json'),i=load('config/indicators.json'),s=load('config/sources.json'),c=load('config/municipalities.json');
+test('15 definitions map to exactly five source groups and 31 unique municipalities',()=>assert.doesNotThrow(()=>validateData(d,i,s,c)));
+test('year and month filters retain source rows and leave missing months empty',()=>{assert.equal(monthlyRows(d.monthly,2024).length,12);assert.equal(monthlyRows(d.monthly,2026).length,9);assert.equal(monthlyRows(d.monthly,2026,'10').length,0);assert.deepEqual(monthlyRows(d.monthly,2025,'2'),[d.monthly.find(r=>r.period==='2025-02')]);});
+test('growth preserves missing, zero denominator, NaN and infinity as null',()=>{for(const v of [0,null,undefined,NaN,Infinity])assert.equal(yoy(10,v),null);assert.equal(yoy(NaN,10),null);assert.ok(Math.abs(yoy(120,100)-20)<1e-10);assert.equal(yoy(0,10),-100);});
+test('invalid country identifiers, duplicate periods and nonnumeric observations fail validation',()=>{for(const mutate of [x=>x.markets[0].name='',x=>x.monthly.push(x.monthly[0]),x=>x.monthly[0].inbound=NaN]){const x=structuredClone(d);mutate(x);assert.throws(()=>validateData(x,i,s,c));}});
+test('missing previous calendar month is not replaced by adjacent row',()=>{const r=monthlyRows(d.monthly,2024,'1')[0];assert.equal(yoy(r.inbound,d.monthly.find(x=>x.period==='2023-01')?.inbound),null);});
+test('CSV has BOM, escaped quotes and blank null values',()=>{assert.equal(csv(['a','b'],[['a,"b',null]]),'\uFEFF"a","b"\r\n"a,""b",""');});

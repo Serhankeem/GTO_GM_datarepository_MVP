@@ -1,0 +1,16 @@
+code,id,label_ko,dimensions,unit,frequency,source_id,connected,publication_approved,notes
+KTO-01,inbound_arrivals_annual,연간 방한객 수,national,person,year,kto_official_tourism_stats,False,False,완결된 연도 기준. YTD와 분리. 공식 연간 공표치 우선.
+KTO-02,inbound_arrivals_monthly,월간 방한객 수,national,person,month,kto_official_tourism_stats,False,False,한국관광통계의 방한 외래관광객 정의 그대로 적용.
+KTO-03,inbound_arrivals_yoy,전년 동월 대비 증감률,national,percent,month,kto_official_tourism_stats,False,False,(이번 달 / 전년 같은 달 - 1) × 100. 분모 0/누락이면 null.
+KTO-04,inbound_arrivals_by_country,국가별 방한객 수,country,person,month,kto_official_tourism_stats,False,False,공식 국적 분류. 전체 합산 범위/교포 분류는 원자료 확인.
+KTO-05,inbound_arrivals_country_yoy,국가별 방한객 성장률,country,percent,month,kto_official_tourism_stats,False,False,동일 국적 분류의 전년 동월 기준. 분류 변경 시 자동 비교 금지.
+GG-01,gg_foreign_visits,경기도 외국인 방문 추이,province,estimated_visits,month,kto_regional_data,False,False,이동통신 기반 방문량 추정치. 고유 방문자 수로 표현 금지.
+GG-02,gg_foreign_visits_by_municipality,시군별 외국인 방문 추이,municipality,estimated_visits,month,kto_regional_data,False,False,시군 원자료 직접 확보. 하위 구 합산으로 시 집계치 생성 금지.
+GG-03,gg_foreign_visits_municipality_yoy,시군별 방문 증감률,municipality,percent,month,kto_regional_data,False,False,동일 산식·공간 정의·행정구역 기준일 때만 비교.
+GG-04,gg_foreign_visits_by_country,국적별 경기도 방문 현황,province|country,estimated_visits,month,kto_regional_data,False,False,외국인 방문 통신 추정치의 국가 분류. 한국관광통계 국적과 동일시 금지.
+SP-01,gg_foreign_card_spend,경기도 외국인 관광소비 추이,province,source_unit_pending,month,kto_regional_data,False,False,"신용카드 기반, 가맹점/업종/단위·집계 범위를 파일에서 확정."
+SP-02,gg_foreign_card_spend_by_country,국적별 관광소비,province|country,source_unit_pending,month,kto_regional_data,False,False,경기도 범위. 국적별 집계 누락/온라인예약서비스 제외 유의.
+SP-03,gg_foreign_card_spend_by_industry,업종별 외국인 관광소비,province|industry,source_unit_pending,month,kto_regional_data,False,False,카드사 업종 분류 버전·변경점 확인.
+AIR-01,inbound_air_operations,방한 항공 운항 현황,country|departure_city|arrival_airport,flights_pending_verification,month,kto_aviation,False,False,운항편수·여객수 개념을 구분. 시점/빈도/수집 경로 확인 전 비연결.
+DB-01,tourism_resource_ota_links,관광지·OTA 연결 DB,municipality|attraction|ota,link_records,snapshot,ggto_ota_internal,False,False,관광상품 노출/관련 링크 DB. 실제 판매 실적·예약 건수 아님.
+RES-01,market_reports,해외시장 보고서 라이브러리,country|publisher|category,reports,date_or_year,kto_market_reports,False,False,제목·기관·날짜 정밀도·원문 URL 등 메타데이터만. PDF 복제 금지.

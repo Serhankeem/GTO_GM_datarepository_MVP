@@ -39,7 +39,7 @@ def validate(csv_path: Path):
     return sorted(entries,key=lambda v:v['period']),errors
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--input',type=Path,default=Path(__file__).resolve().parents[1]/'docs/demo_monthly.csv');ap.add_argument('--outdir',type=Path,default=Path(__file__).resolve().parents[1]/'workflow/output');a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--input',type=Path,default=Path(__file__).resolve().parents[1]/'data/demo_monthly.csv');ap.add_argument('--outdir',type=Path,default=Path('/tmp/ggto-validation'));a=ap.parse_args()
     entries,errors=validate(a.input)
     report={'kind':'synthetic_demo_only','rows':len(entries),'errors':errors,'validation_passed':not errors,'publish_approved':False,'live_data':False,'generated_at':'not_recorded_in_demo'}
     a.outdir.mkdir(parents=True,exist_ok=True)
